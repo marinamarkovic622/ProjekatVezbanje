@@ -31,9 +31,10 @@ public class TestLogIn {
 
         } catch (InterruptedException e) {
             e.printStackTrace();
+
         } finally {
             driver.quit();
-    }
+        }
 
     }
 }
