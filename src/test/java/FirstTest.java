@@ -1,3 +1,4 @@
+import lib.webDriver.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,10 +10,10 @@ public class FirstTest {
     public void marinTest() {
         String expectedHeader = "Automation Practice Website";
 
-        System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        //System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/chromedriver.exe");
+        //WebDriver driver = new ChromeDriver();
+        WebDriver driver = WebDriverFactory.getDriver();
 
-        driver.get("http://automationpractice.com/index.php");
 
         String actualHeader = driver.findElement(By.xpath("//h1")).getText();
 

@@ -19,6 +19,7 @@ public class LogInPage extends BasePage {
 
     public LogInPage(WebDriver driver) {
         super(driver);
+
     }
 
 
